@@ -1,0 +1,25 @@
+ALGORITHM algoProject
+VAR
+    count:INTEGER :=0;
+    i:INTEGER :=0;
+    j:INTEGER :=0;
+    c:CHAR;
+    sentence:STRING :="";
+
+BEGIN
+    repeat
+        read(c)
+        count=count+1 ;
+        if(c="a" OR c="A" OR c="e" OR c="E" c="o" OR c="O" c="u" OR c="U") then 
+            i=i+1;
+        end if;
+        if (c="  ") then
+            j=j+1;
+        end if;
+        sentence=sentence+c;
+    until (c=".")
+    write ("number of vowls are"i);
+    write("number of words are"j);
+    write("the length of the sentence is"count);
+    write("the sentence is"sentence);
+END
